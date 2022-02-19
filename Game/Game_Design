@@ -16,9 +16,54 @@ The game continues until the player closes the window.
 ## Game Design
 
 Class: Director
+# Directs game
+---
+
+---
+start_game():None
+---
+Class: Actor 
+# Visible moving opjects and player
 ---
 
 
 
-## Game Design
+---
+Class: Gems
+---
+
+
+
+---
+Class: Rocks
+---
+
+
+
+---
+Class: Board
+---
+
+
+
+---
+Class: Keyboard_Service
+---
+
+
+
+---
+Class: Video_Service
+---
+
+
+
+---
+Class: Point
+---
+
+
+
+---
+
 
