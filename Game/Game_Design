@@ -1,15 +1,17 @@
-# cse210-2
+# cse210-04
  Team Work
-# Jumper
-Jumper is a game in which the player seeks to solve a puzzle by guessing the letters of a secret word one at a time.
+# Greed
+Greed is a game in which the player seeks to gather as many falling gems as possible. The game continues as long as the player wants more!
 
 # Rules
-The puzzle is a secret word randomly chosen from a list.
-The player guesses a letter in the puzzle.
-If the guess is correct, the letter is revealed.
-If the guess is incorrect, a line is cut on the player's parachute.
-If the puzzle is solved the game is over.
-If the player has no more parachute the game is over.
+Greed is played according to the following rules:
+
+Gems (*) and rocks (o) randomly appear and fall from the top of the screen.
+The player (#) can move left or right along the bottom of the screen.
+If the player touches a gem they earn a point.
+If the player touches a rock they lose a point.
+Gems and rocks are removed when the player touches them.
+The game continues until the player closes the window.
 
 ## Game Design
 
