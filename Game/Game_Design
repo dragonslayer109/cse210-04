@@ -15,51 +15,59 @@ The game continues until the player closes the window.
 
 ## Game Design
 
-Class: Director
+Class: Director ()
 # Directs game
 ---
 
 ---
-start_game():None
+
 ---
-Class: Actor 
+Class: Actor (Erin Strydom)
 # Visible moving opjects and player
 ---
 
 
 
 ---
-Class: Gems
+Class: Gems(Point) (Raydon Vetten)
+# Creates gems
+---
+_gems: list
+---
+get_gem(): None
+set_gem(): None
+unpdate(): None
+---
+Class: Rocks (Raydon Vetten)
+# Create rocks
 ---
 
 
 
 ---
-Class: Rocks
+Class: Board ()
+# Display information
 ---
 
 
 
 ---
-Class: Board
+Class: Keyboard_Service ()
+# Track key press
 ---
 
 
 
 ---
-Class: Keyboard_Service
+Class: Video_Service (Erin Strydom)
+# Rendor game
 ---
 
 
 
 ---
-Class: Video_Service
----
-
-
-
----
-Class: Point
+Class: Point ()
+# Track position each object
 ---
 
 
