@@ -23,11 +23,20 @@ Class: Director ()
 
 ---
 Class: Actor (Erin Strydom)
-# Visible moving opjects and player
+# Visible moving objects and player.
 ---
+Import = Point(), Gems() & Rocks()
+---
+_player: str
+_player_position: Point()
+_player_velocity: Point()
 
+# Should the below be a part of this class?
 
-
+_gem_position: Point()
+_gem_velocity: Point()
+_rock_position: Point()
+_rock_velocity: Point()
 ---
 Class: Gems(Point) (Raydon Vetten)
 # Creates gems
@@ -62,9 +71,20 @@ Class: Keyboard_Service ()
 Class: Video_Service (Erin Strydom)
 # Rendor game
 ---
-
-
-
+Import = pyray
+---
+_width: int
+_height: int
+_cell: int
+_frame_rate: int
+---
+# Possible methods & functions
+open_window()
+start_drawing()
+get_position()
+stop_drawing()
+close_window()
+clear_screen() 
 ---
 Class: Point ()
 # Track position each object
