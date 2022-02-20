@@ -42,18 +42,25 @@ Class: Gems(Point) (Raydon Vetten)
 # Creates gems
 ---
 _gems: list
+alive = True
 ---
 get_gem(): None
 set_gem(): None
-unpdate(): None
+update(): None
+collision(): None
 ---
 Class: Rocks (Raydon Vetten)
 # Create rocks
 ---
-
-
-
+_rocks: list
+alive = True
 ---
+get_rock(): None
+set_rock(): None
+update(): None
+collision(): None
+---
+
 Class: Board ()
 # Display information
 ---
