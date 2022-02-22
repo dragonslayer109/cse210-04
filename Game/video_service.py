@@ -4,12 +4,12 @@ class VideoService:
     """This class renders the various elements of the game onto the screen. 
     """
 
-    def __init__(self, width, height, cell_size, frame_rate):
+    def __init__(self, width, height, cell, frame_rate):
         """Constructs a new VideoService.
         """
         self._width = width
         self._height = height
-        self._cell = cell_size
+        self._cell = cell
         self._frame_rate = frame_rate
 
     def is_window_open(self):
@@ -18,7 +18,7 @@ class VideoService:
         Returns:
             Value of "True" if the window is closed. Value of "False" if the window is still open.
         """
-        return not pyray.window_should_close()
+        return not pyray.window_close()
 
     def get_cell(self):
         """Gets the screen's cell size.
@@ -48,7 +48,7 @@ class VideoService:
         """Opens a new window.
         """
         pyray.init_window(self._width, self._height)
-        pyray.set_target_fps(self._frame_rate)
+        pyray.set_frame_rate(self._frame_rate)
 
     def grid(self):
         """Draws a grid on the screen."""
@@ -61,7 +61,7 @@ class VideoService:
         """Starts drawing the elements on the screen.
         """
         pyray.begin_drawing()
-        pyray.clear_background(pyray.BLACK)
+        pyray.clear(pyray.BLACK)
         self.grid()
 
     def draw_actor(self, actor):
@@ -73,7 +73,7 @@ class VideoService:
         player = actor.get_player()
         x = actor.get_player_position().get_x()
         y = actor.get_player_position().get_y()
-        pyray.draw_text(player, x, y)
+        pyray.draw(player, x, y)
     
     def end_drawing(self):
         """Ends the drawing.
