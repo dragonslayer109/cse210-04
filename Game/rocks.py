@@ -12,6 +12,7 @@ class Rock(Actor):
     def __init__(self):
         super().__init__()
         self.alive = True
+        self.score = 0
         self._rock = "o"
 
     def get_rock(self):
