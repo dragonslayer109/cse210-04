@@ -14,6 +14,8 @@ class Actor:
     def __init__(self):
         """Constructs the Actor."""
         self._player = ""
+        self.alive = True
+        self.score = 0
         self._position = Point(0, 0)
         self._velocity = Point(0, 0)
 
